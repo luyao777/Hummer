@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++   -fms-extensions -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Application.dir/Sandbox/Application.cpp.o  -o Application  Hummer/libhummerlib.a 
