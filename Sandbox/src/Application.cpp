@@ -1,4 +1,5 @@
-#include <Hummer.h>
+// #include <Hummer.h>
+#include "Hummer.h"
 
 class Sandbox : public Hummer::Application{
     public:
@@ -10,7 +11,7 @@ class Sandbox : public Hummer::Application{
 
 int main(){
     Sandbox* sandbox = new Sandbox();
-    sandbox->run();
+    sandbox->Run();
     delete sandbox;
     return 0;
 }
