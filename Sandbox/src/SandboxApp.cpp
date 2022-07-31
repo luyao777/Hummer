@@ -7,11 +7,6 @@ class Sandbox : public Hummer::Application{
         ~Sandbox(){}
 };
 
-
-
-int main(){
-    Sandbox* sandbox = new Sandbox();
-    sandbox->Run();
-    delete sandbox;
-    return 0;
+Hummer::Application* Hummer::CreateApplication(){
+    return new Sandbox();
 }

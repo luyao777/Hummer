@@ -10,6 +10,8 @@ MESSAGE (STATUS "THIS IS BIRNARY DIR : " ${HUMMER_BINARY_DIR})
 MESSAGE (STATUS "THIS IS SOURCE DIR : " ${HUMMER_SOURCE_DIR})
 
 INCLUDE_DIRECTORIES(${HUMMER_SOURCE_DIR}/Hummer/src/)
+# INCLUDE_DIRECTORIES(${HUMMER_SOURCE_DIR}/Hummer/src/Hummer/)
 
-SET (SRC_LIST Sandbox/src/Application.cpp)
-ADD_EXECUTABLE(Application ${SRC_LIST})
+SET (HUMMER_SRC Hummer/src/Hummer/Application.cpp)
+SET (SANDBOX_SRC Sandbox/src/SandboxApp.cpp Hummer/src/Hummer/Application.cpp)
+ADD_EXECUTABLE(Application ${SANDBOX_SRC} ${HUMMER_SRC})
