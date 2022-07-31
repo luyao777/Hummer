@@ -13,6 +13,5 @@ and run the following cmds
 ```bash
 cd build
 cmake .. && make
-./Applcation
+./Application
 ```
-
